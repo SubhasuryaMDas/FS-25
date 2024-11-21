@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <h2>Learning HTML Forms</h2>
+    <form action="/form.php" method="post">
+        <!-- <p>Enter First Name</p> -->
+        <div>
+            <label for="firstname">Enter First Name</label>
+            <br>
+            <input name="fname" id="firstname" type="text"/>
+        </div>
+        <div>
+            <label for="lastname">Enter Last Name</label>
+            <br>
+            <input name="lname" id="lastname" type="text"/>
+        </div>
+        <div>
+            <label for="age">Enter Age</label>
+            <input min="10" max="50" value="30" name="user_age" id="age" type="number"/>
+        </div>
+        <div>
+            <label for="mobile">Enter Mobile</label>
+            <input name="mobile" id="mobile" type="tel"/>
+        </div>
+        <div>
+            <label for="password">Enter Password</label>
+            <input name="password" id="password" type="password"/>
+        </div>
+        <div>
+            <label for="tnc">Agree to <a target="_blank" href="./tnc.html">Terms & Conditions</a></label>
+            <input name="tnc" id="tnc" type="checkbox"/>
+        </div>
+        <div>
+            <label for="hoodie_color">Select your hoodie color</label>
+            <input value="#ff00ff" name="fav_color_for_hoodie" id="hoodie_color" type="color"/>
+        </div>
+        <div>
+            <label for="gender">Select Gender</label>
+            <input id="gender" name="gender" type="radio" value="male"/> Male
+            <input id="gender" name="gender" type="radio" value="female"/> Female
+        </div>
+        <div>
+            <input type="email" placeholder="Enter Email"/>
+        </div>
+        <div>
+            <input type="date"/>
+            <input type="datetime"/>
+            <input type="datetime-local"/>
+            <input type="hidden"/>
+            <input type="url"/>
+            <input type="file"/>
+            <input type="submit"/>
+        </div>
+    </form>
+</body>
+</html>
