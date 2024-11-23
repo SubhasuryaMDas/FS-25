@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Continue | HTML 5</title>
+</head>
+<body>
+
+    <p>We are going &#128512; to learn HTML, CSS &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;& Javascript in this module. 10 &gt; 9 is true. 7 &lt; 10 . &copy; geekster.in</p>
+
+    <form action="/user-registration.php" method="post">
+
+
+        <fieldset>
+
+            <legend>Personal Information</legend>
+
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname"/>
+
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lname"/>
+        </fieldset>
+
+        <fieldset>
+
+            <legend>College Information</legend>
+            
+            <br>
+            <label for="college">Choose your college</label>
+            <select id="college">
+                <option disabled selected>Select College</option>
+                <option value="IIT Madras">IIT Madras</option>
+                <option value="IIT Delhi" disabled>IIT Delhi</option>
+                <option value="VIT Chennai" disabled>VIT Chennai</option>
+                <option value="DTU">DTU</option>
+            </select>
+
+            <!-- <input type="text"/> -->
+
+            <br>
+            <label>Enter your college experience</label>
+            <br>
+            <textarea required rows="5" placeholder="Enter your college experience"></textarea>
+        </fieldset>
+
+        <br>
+        <button type="submit">Save</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
