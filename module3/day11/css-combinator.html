@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning CSS Combinator</title>
+    <style>
+
+        /* Child Selector Combinator */
+        /* #box > p {
+            color: red;
+        } */
+
+        /* Descedant Selector Combinator */
+        /* #box p{
+            color: red;
+        } */
+
+        /* Adjacent Sibling Selector Combinator*/
+        /* #box > h1 + h1{
+            color: red;
+        } */
+
+        /* General Sibling Selector Combinator */
+        /* #box > h1 ~ p {
+            color: red;
+        } */
+
+        #box + div > p:nth-child(2) {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <p>I am paragraph1</p>
+        <h1>I am h1</h1>
+        <p>I am paragraph2</p>
+        <p>I am paragraph</p>
+        <div>
+            <h1>I am h1</h1>
+            <p>I am paragraph</p>
+        </div>
+        <h2>I am paragraph</h2>
+        <p>I am paragraph</p>
+    </div>
+    <div>
+        <p>I am paragraph</p>
+        <p>I am paragraph</p>
+    </div>
+</body>
+</html>
