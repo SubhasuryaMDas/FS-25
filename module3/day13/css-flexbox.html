@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning CSS Flexbox</title>
+    <style>
+        /* .item{
+            background-color: red;
+            border: 2px solid white;
+            width: 200px;
+            height: 200px;
+        } */
+        .item{
+            border: 2px solid white;
+            height: 200px;
+            color: white;
+            width: 200px;
+            font-size: 40px;
+        }
+        #parent-product-container > .item:nth-child(odd){
+            background-color: red;
+        }
+        #parent-product-container > .item:nth-child(even){
+            background-color: blue;
+        }
+        #parent-product-container{
+            background-color: yellow;
+            display: flex;
+            /* flex-wrap: nowrap; */
+            flex-wrap: wrap;
+            /* flex-wrap:wrap-reverse; */
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* justify-content: flex-start; */
+            /* justify-content: flex-end; */
+            /* justify-content: center; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-between; */
+            height: 1200px;
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: center; */
+        }
+        #parent-product-container > .item:nth-child(1){
+            order: 1;
+        }
+        #parent-product-container > .item:nth-child(2){
+            order: 3;
+        }
+        #parent-product-container > .item:nth-child(3){
+            order: 7;
+        }
+        #parent-product-container > .item:nth-child(4){
+            order: 5;
+        }
+        #parent-product-container > .item:nth-child(5){
+            order: -10;
+        }
+        #parent-product-container > .item:nth-child(6){
+            order: 6;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Flexbox</h1>
+    <section id="products">
+        <div id="parent-product-container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <!-- <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div> -->
+            <!--<div class="item">11</div>
+            <div class="item">12</div>
+            <div class="item">13</div>
+            <div class="item">14</div>
+            <div class="item">15</div>
+            <div class="item">16</div> -->
+        </div>
+    </section>
+</body>
+</html>
