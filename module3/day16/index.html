@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning GRID</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        #container {
+            display: grid;
+            /* grid-template-rows: 200px 100px 300px; */
+            /* grid-template-columns: 100px 100px 100px; */
+            /* grid-template-columns: repeat(10, 100px); grid-template-columns: 100px 100px 100px; */
+            /* grid-template-columns: 100px 50px 200px; */
+            /* grid-template-rows: 200px 200px; */
+            /* grid-template-rows: repeat(3, 100px); */
+            grid-template-rows: repeat(4, 1fr);
+            /* height: 100vh; */
+            /* grid-template-columns: 200px 300px; */
+            /* grid-template-columns: 30% 30%; */
+            /* grid-template-columns: repeat(4, 25%); */
+            grid-template-columns: 1fr 2fr 1fr 3fr;
+            /* row-gap: 20px; */
+            /* column-gap: 30px; */
+            /* gap : 20px 30px; */
+            gap: 30px;
+            background-color: tomato;
+        }
+        .item {
+            padding: 20px;
+            font-size: 24px;
+            color: red;
+        }
+        #container > div:nth-child(1){
+            background-color: yellow;
+            /* grid-column-start: 1; */
+            /* grid-column-end: 4; */
+            /* grid-row-start: 1; */
+            /* grid-row-end: 4; */
+        }
+        #container > div:nth-child(2){
+            background-color: black;
+        }
+        #container > div:nth-child(3){
+            background-color: pink;
+        }
+        #container > div:nth-child(4){
+            background-color: green;
+        }
+        #container > div:nth-child(5){
+            /* grid-column-start: 3; */
+            /* grid-column-end: 5; */
+        }
+        .item {
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+        <div class="item">13</div>
+        <div class="item">14</div>
+        <div class="item">15</div>
+        <div class="item">16</div>
+        <div class="item">17</div>
+        <div class="item">18</div>
+        <div class="item">19</div>
+        <div class="item">20</div>
+        <div class="item">21</div>
+    </div>
+</body>
+</html>
