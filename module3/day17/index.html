@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Part 2</title>
+    <style>
+        #container{
+            display: grid;
+            background-color: red;
+            height: 50vh;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(3, 100px);
+            gap: 4px;    
+            /* justify-content: start; */
+            /* justify-content: end; */
+            /* justify-content: center; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* align-content: start; */
+            /* align-content: end; */
+            /* align-content: center; */
+            /* align-content: space-between; */
+            /* align-content: space-around; */
+            /* align-content: space-evenly; */
+        }
+        .item{
+            font-size: 24px;
+            font-weight: bold;
+            padding: 20px;
+        }
+        #container > div:nth-child(odd){
+            background-color: yellow;
+        }
+        #container > div:nth-child(even){
+            background-color: pink;
+        }
+        #item1{
+            /* grid-column-start: 1;
+            grid-column-end: 3; */
+            /* grid-column: 1 / 3; */
+            /* grid-column: 1 / span 2; */
+            /* grid-row-start: 1;
+            grid-row-end: 3; */
+            /* grid-row: 1 / 3; */
+            /* grid-row: 1 / span 2; */
+            /* grid-area : grid-row-start / grid-column-start / grid-row-end / grid-column-end */
+            grid-area: 1 / 1 / span 2 / span 2;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="item1" class="item">1</div>
+        <div id="item2" class="item">2</div>
+        <div id="item3" class="item">3</div>
+        <div id="item4" class="item">4</div>
+        <div id="item5" class="item">5</div>
+        <div id="item6" class="item">6</div>
+        <div id="item7" class="item">7</div>
+        <div id="item8" class="item">8</div>
+    </div>
+    <a href="./web-layout-using-flex.html">Complex Web Layout using Flex</a>
+</body>
+</html>

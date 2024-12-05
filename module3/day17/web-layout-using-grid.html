@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        #container{
+            display: grid;
+            grid-template-areas: 'header header header header right-side-bar' 'left-side-bar main main main right-side-bar' 'left-side-bar main main main right-side-bar' 'left-side-bar main main main right-side-bar' 'footer footer footer footer footer';
+            grid-template-rows: repeat(5, 20vh);
+        }
+        #item1{
+            grid-area: header;
+        }
+        #item2{
+            grid-area: left-side-bar;
+        }
+        #item3{
+            grid-area: right-side-bar;
+        }
+        #item4{
+            grid-area: main;
+        }
+        #item5{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header style="background-color: red;" id="item1" class="item">Header</header>
+        <aside style="background-color: green;" id="item2" class="item">Left Side Bar</aside>
+        <aside style="background-color: wheat;" id="item3" class="item">Right Side Bar</aside>
+        <main style="background-color: aqua;" id="item4" class="item">Main</main>
+        <footer style="background-color: blue;" id="item5" class="item">Footer</footer>
+    </div>
+</body>
+</html>

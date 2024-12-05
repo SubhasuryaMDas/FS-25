@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Grid Area and Grid Template Areas</title>
+    <style>
+        #container{
+            display: grid;
+            gap: 4px;
+            /* grid-template-areas: 'ankit ankit ankit . . .'; */
+            grid-template-areas: 'ankit ankit ankit . . .' 'ankit ankit ankit . . .';
+        }
+        #container > div:nth-child(odd){
+            background-color: yellow;
+        }
+        #container > div:nth-child(even){
+            background-color: pink;
+        }
+        .item{
+            font-size: 24px;
+            font-weight: bold;
+            padding: 20px;
+        }
+        #item1{
+            grid-area: ankit; 
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="item1" class="item">1</div>
+        <div id="item2" class="item">2</div>
+        <div id="item3"class="item">3</div>
+        <div id="item4" class="item">4</div>
+        <div id="item5" class="item">5</div>
+        <div id="item6" class="item">6</div>
+        <!-- <div id="item7" class="item">7</div>
+        <div id="item8" class="item">8</div> -->
+    </div>
+</body>
+</html>
