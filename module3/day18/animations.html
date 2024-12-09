@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Animation</title>
+    <style>
+        /* @keyframes change-box-position {
+            from {
+                top: 0px;
+                left: 0px;
+            }
+            to {
+                top: 0px;
+                right: 0px;
+            }
+        } */
+        @keyframes change-box-position {
+            0%{
+                /* It will be 0s */
+                top: 0px;
+                left: 0px;
+                transform: scale(0.1) rotate(0deg);
+            }
+            5%{
+                top: 0px;
+                left: 5vw;
+            }
+            10%{
+                top: 0px;
+                left: 10vw;
+            }
+            15%{
+                top: 0px;
+                left: 15vw;
+            }
+            20%{
+                top: 0px;
+                left: 20vw;
+            }
+            25%{
+                /* It will be 1s */
+                top: 0px;
+                left: 25vw;
+                transform: scale(0.25) rotate(45deg);
+            }
+            50%{
+                /* It will be 2s */
+                top: 0px;
+                left: 50vw;
+                transform: scale(0.5) rotate(90deg);
+            }
+            75%{
+                /* It will be 3s */
+                top: 0px;
+                left: 75vw;
+                transform: scale(0.75) rotate(145deg);
+            }
+            100%{
+                /* It will be 4s */
+                top: 0px;
+                right: 0px;
+                transform: scale(1) rotate(180deg);
+            }
+        }
+        /* @keyframes change-box-color {
+            from {
+                background-color: yellow;
+            }
+            to {
+                background-color: pink;
+            }
+        } */
+        @keyframes change-box-color {
+            0%{
+                background-color: yellow;
+            }
+            25%{
+                background-color: green;
+            }
+            50%{
+                background-color: blue;
+            }
+            75%{
+                background-color: red;
+            }
+            100%{
+                background-color: yellowgreen;
+            }
+        }
+        #container1 {
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            position: fixed;
+            /* animation-name: change-box-color, change-box-position; */
+            /* animation-duration: 4s; */
+            /* animation-timing-function: linear; */
+            /* animation-delay: -2s; */
+            /* animation-delay: 2s; */
+            /* animation-iteration-count: 4; */
+            /* animation-iteration-count: infinite; */
+            /* animation-direction: normal; */
+            /* animation-direction: reverse; */
+            /* animation-direction: alternate; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-fill-mode: none; */
+            /* animation-fill-mode: forwards; */
+            /* animation-fill-mode: backwards; */
+            animation: change-box-color 4s linear 2s infinite alternate, change-box-position 4s linear 2s infinite alternate;
+        }
+    </style>
+</head>
+<body>
+    <div id="container1">       
+    </div>
+</body>
+</html>

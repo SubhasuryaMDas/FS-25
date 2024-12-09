@@ -195,6 +195,61 @@
         .sidebar-link-box:hover {
             background-color: grey;
         }
+        /* Mobile Device */
+        /* screen is media type. Other media types are all, print, screen */
+        /* min-width, max-width are Media Features. There are some more media features as well orientation, height, width, min-height, min-width*/
+        @media screen and (min-width: 320px) and (max-width: 480px){
+            #search-container{
+                display: none;
+            }
+            #navbar-right-part{
+                display: none;
+            }
+            #humberger-container{
+                display: none;
+            }
+            #sidebar-and-main-container > section:first-child{
+                display: none;
+            }
+            #sidebar-and-main-container > section:nth-child(2){
+                width: 100vw;
+            }
+        }
+        /* Ipad & Tablets */
+        @media screen and (min-width: 481px) and (max-width: 768px){
+            body{
+                background-color: blue;
+            }
+        }
+        /* Laptop screens */
+        @media screen and (min-width: 769px) and (max-width: 1024px){
+            body{
+                background-color: red;
+            }
+        }
+        /* Desktops, large screens */
+        @media screen and (min-width: 1025px) and (max-width: 1200px){
+            body{
+                background-color: yellow;
+            }
+        }
+        /* Extra Large Screens */
+        @media screen and (min-width: 1201px){
+            body{
+                background-color: pink;
+            }
+        }
+        @media print {
+            body {
+                background-color: red;
+            }
+            #sidebar-and-main-container > section:first-child{
+                display: none;
+            }
+            #sidebar-and-main-container > section:nth-child(2){
+                width: 100vw;
+            }
+        }
     </style>
 </head>
 <body>
@@ -202,7 +257,7 @@
         <nav id="navbar" class="flex-container">
             <!-- Humberger Icon & Youtube Icon -->
             <div class="flex-container">
-                <div>
+                <div id="humberger-container">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
                 </div>
                 <div>

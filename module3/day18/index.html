@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Transitions</title>
+    <style>
+        #btn{
+            background-color: yellow;
+            width: 100px;
+            height: 50px;
+            font-size: 16px;
+            /* transition-property: background-color width;
+            transition-duration: 2s;
+            transition-timing-function: ease;
+            transition-delay: 5s; */
+            transition: background-color 2s linear 2s, width 2s linear 2s, font-size 2s linear 2s;
+        }
+        #btn:hover{
+            background-color: green;
+            width: 200px;
+            font-size: 24px;
+        }
+        #btn:active{
+            background-color: blue;
+        }
+        #content{
+            font-size: 24px;
+            transition: font-size 2s;
+        }
+        #content:hover{
+            font-size: 36px;
+        }
+        .item{
+            width: 200px;
+            height: 100px;
+            margin: 10px;
+            background-color: red;
+            transition: width 2s;
+        }
+        .item:hover{
+            width: 400px;
+        }
+        #item1{
+            transition-timing-function: ease;
+        }
+        #item2{
+            transition-timing-function: linear;
+        }
+        #item3{
+            transition-timing-function: ease-in;
+        }
+        #item4{
+            transition-timing-function: ease-out;
+        }
+        #item5{
+            transition-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button id="btn">Click Me</button>
+        <div id="content">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam ipsam suscipit iure quasi officia accusamus nostrum nisi, rem quae voluptate?</p>
+        </div>
+        <div id="item1" class="item">ease</div>
+        <div id="item2" class="item">linear</div>
+        <div id="item3" class="item">ease-in</div>
+        <div id="item4" class="item">ease-out</div>
+        <div id="item5" class="item">ease-in-out</div>
+    </div>
+</body>
+</html>
